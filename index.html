@@ -1,85 +1,74 @@
 
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="ur" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHAMI DISCOUNT SHOP - Dunyapur | Mobile Sale</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<title>SHAMI GAMES - Easypaisa Deposit</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#f5f5f7;color:#222}
-header{background:#111;color:#fff;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-header h1{font-size:20px;letter-spacing:1px}
-header h1 span{color:#ffcc00}
-.hero{background:linear-gradient(135deg,#000000,#2c2c2c);color:#fff;text-align:center;padding:60px 6%}
-.hero h2{font-size:36px;margin-bottom:10px}
-.hero h2 span{color:#ffcc00}
-.hero p{opacity:.8;margin-bottom:20px}
-.btn{background:#ffcc00;color:#000;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:700;display:inline-block}
-.section{padding:30px 4%}
-.title{text-align:center;font-size:26px;margin-bottom:5px;font-weight:700}
-.sub{text-align:center;color:#888;font-size:14px;margin-bottom:25px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
-.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.07);border:1px solid #eee}
-.card img{width:100%;height:180px;object-fit:contain;background:#fff;padding:10px}
-.info{padding:10px 12px 14px}
-.info h4{font-size:13px;line-height:1.4;height:36px;overflow:hidden}
-.spec{font-size:11px;color:#777;margin:4px 0}
-.price{color:#e60000;font-weight:800;font-size:15px;margin-top:4px}
-.old{font-size:11px;color:#999;text-decoration:line-through;margin-left:6px}
-.order{display:block;margin-top:10px;background:#111;color:#fff;text-align:center;padding:9px;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600}
-.order:hover{background:#25D366}
-.banner{background:#ffcc00;text-align:center;padding:12px;font-weight:700;font-size:14px}
-footer{background:#111;color:#aaa;text-align:center;padding:30px 5%;margin-top:20px;font-size:13px}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,.3)}
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+body{background:#0f172a;color:#fff}
+header{background:#1e293b;padding:15px;text-align:center;border-bottom:2px solid #22c55e}
+header h1{color:#22c55e}
+.container{max-width:700px;margin:auto;padding:15px}
+.card{background:#1e293b;border-radius:16px;padding:20px;margin-bottom:18px;border:1px solid #334155}
+.card h2{color:#22c55e;text-align:center;margin-bottom:10px}
+.input{width:100%;padding:12px;border-radius:10px;margin:8px 0;background:#0f172a;color:#fff;border:1px solid #334155}
+.btn{width:100%;padding:13px;border-radius:10px;border:none;font-weight:800;font-size:16px;cursor:pointer;margin-top:10px}
+.btn-green{background:#22c55e;color:#000}
+.btn-blue{background:#3b82f6;color:#fff}
+.acc-box{background:#0f172a;border:2px dashed #22c55e;padding:18px;border-radius:12px;text-align:center;line-height:2}
 </style>
 </head>
 <body>
-<div class="banner">🔥 SHAMI DISCOUNT SHOP - Dunyapur Main Bazaar | Home Delivery All Pakistan 🔥</div>
 <header>
-<h1>SHAMI <span>DISCOUNT</span> SHOP</h1>
-<div style="font-size:12px">📞 0322-8664858</div>
+<h1>SHAMI GAMES</h1>
+<p>ڈیپازٹ اور ودڈرا</p>
 </header>
-<div class="hero">
-<h2>Mobile Sale <span>Discount Offer!</span></h2>
-<p>4/64 Mobile Sirf 10,000 Se Shuru - iPhone, Samsung, Infinix, Tecno, Itel Sab Available</p>
-<a class="btn" href="https://wa.me/923228664858?text=Assalamualaikum%20Shami%20Bhai%20Mobile%20Chahiye">WhatsApp Pe Rabta Karen</a>
+<div class="container">
+
+<div class="card">
+<h2>💰 ڈیپازٹ کریں</h2>
+<div class="acc-box">
+<b style="color:#22c55e;font-size:20px">Easypaisa Account</b><br>
+نمبر: <b style="font-size:24px">03360063760</b><br>
+نام: <b style="font-size:18px">Yasir Naseer</b><br><br>
+<span style="font-size:13px;color:#94a3b8">اس نمبر پر پیسے بھیج کر نیچے فارم بھریں</span>
+</div>
+<input class="input" id="dep_amount" type="number" placeholder="کتنے پیسے بھیجے؟">
+<input class="input" id="dep_trx" type="text" placeholder="Trx ID لکھیں">
+<input class="input" id="dep_number" type="text" placeholder="جس نمبر سے بھیجے">
+<button class="btn btn-green" onclick="submitDeposit()">ڈیپازٹ جمع کرائیں</button>
+<p id="dep_msg" style="color:#22c55e;text-align:center;margin-top:10px"></p>
 </div>
 
-<div class="section">
-<h2 class="title">iPhone Collection 🍎</h2>
-<p class="sub">PTA Approved / JV - Best Price in Dunyapur</p>
-<div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=400" alt="iPhone"><div class="info"><h4>iPhone 11 - 64GB PTA</h4><p class="spec">4/64 | Battery 85%+</p><p class="price">Rs. 52,000 <span class="old">60k</span></p><a class="order" href="https://wa.me/923228664858?text=iPhone%2011%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?q=80&w=400" alt="iPhone"><div class="info"><h4>iPhone 12 - 128GB JV</h4><p class="spec">4/128 | Condition 10/10</p><p class="price">Rs. 58,000 <span class="old">70k</span></p><a class="order" href="https://wa.me/923228664858?text=iPhone%2012%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=400" alt="iPhone"><div class="info"><h4>iPhone 13 Pro Max - 128GB</h4><p class="spec">6/128 | PTA Approved</p><p class="price">Rs. 135,000</p><a class="order" href="https://wa.me/923228664858?text=iPhone%2013%20Pro%20Max%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=400" alt="iPhone"><div class="info"><h4>iPhone 7 Plus - 128GB</h4><p class="spec">3/128 | PTA Approved</p><p class="price">Rs. 22,000 <span class="old">28k</span></p><a class="order" href="https://wa.me/923228664858?text=iPhone%207%20Plus%20Chahiye">Order Now</a></div></div>
-</div>
+<div class="card">
+<h2>💸 ودڈرا کریں</h2>
+<input class="input" id="with_amount" type="number" placeholder="کتنا ودڈرا کرنا ہے؟">
+<input class="input" id="with_account" type="text" placeholder="اپنا Easypaisa نمبر">
+<input class="input" id="with_name" type="text" placeholder="نام">
+<button class="btn btn-blue" onclick="submitWithdraw()">ودڈرا ریکویسٹ</button>
+<p id="with_msg" style="color:#22c55e;text-align:center;margin-top:10px"></p>
 </div>
 
-<div class="section">
-<h2 class="title">Samsung - Infinix - Tecno - Itel</h2>
-<p class="sub">4/64 Sirf 10,000 Se - Discount Rate</p>
-<div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?q=80&w=400" alt="Samsung"><div class="info"><h4>Samsung Galaxy A12</h4><p class="spec">4GB / 64GB | 5000mAh</p><p class="price">Rs. 10,000 <span class="old">15,999</span></p><a class="order" href="https://wa.me/923228664858?text=Samsung%20A12%204-64%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=400" alt="Samsung"><div class="info"><h4>Samsung Galaxy A32</h4><p class="spec">6GB / 128GB | 5000mAh</p><p class="price">Rs. 18,500 <span class="old">25k</span></p><a class="order" href="https://wa.me/923228664858?text=Samsung%20A32%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?q=80&w=400" alt="Infinix"><div class="info"><h4>Infinix Hot 30 - 8/128</h4><p class="spec">8GB / 128GB | Gaming</p><p class="price">Rs. 22,000 <span class="old">32k</span></p><a class="order" href="https://wa.me/923228664858?text=Infinix%20Hot%2030%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?q=80&w=400" alt="Infinix"><div class="info"><h4>Infinix Smart 8 - 4/64</h4><p class="spec">4GB / 64GB | Box Pack</p><p class="price">Rs. 10,000 <span class="old">18,999</span></p><a class="order" href="https://wa.me/923228664858?text=Infinix%20Smart%208%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?q=80&w=400" alt="Tecno"><div class="info"><h4>Tecno Spark 20 - 8/128</h4><p class="spec">8GB / 256GB | 108MP</p><p class="price">Rs. 19,500 <span class="old">29k</span></p><a class="order" href="https://wa.me/923228664858?text=Tecno%20Spark%2020%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=400" alt="Tecno"><div class="info"><h4>Tecno Pop 8 - 4/64</h4><p class="spec">4GB / 64GB | Box Pack</p><p class="price">Rs. 10,000 <span class="old">16,500</span></p><a class="order" href="https://wa.me/923228664858?text=Tecno%20Pop%208%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?q=80&w=400" alt="Itel"><div class="info"><h4>Itel A70 - 4/128</h4><p class="spec">4GB / 128GB | Big Battery</p><p class="price">Rs. 12,500 <span class="old">19k</span></p><a class="order" href="https://wa.me/923228664858?text=Itel%20A70%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?q=80&w=400" alt="Itel"><div class="info"><h4>Itel S23 - 8/128</h4><p class="spec">8GB / 128GB | Box Pack</p><p class="price">Rs. 15,000 <span class="old">22k</span></p><a class="order" href="https://wa.me/923228664858?text=Itel%20S23%20Chahiye">Order Now</a></div></div>
 </div>
-</div>
-
-<footer>
-<b style="color:#fff;font-size:18px">SHAMI DISCOUNT SHOP</b><br><br>
-Dunyapur Main Bazaar, Punjab<br>
-WhatsApp: 0322-8664858 | Call: 0322-8664858<br>
-Home Delivery All Pakistan - Cash On Delivery<br><br>
-© 2026 Shami Discount Shop - Sab Se Sasta
-</footer>
-<a class="whatsapp" href="https://wa.me/923228664858">W</a>
+<script>
+function submitDeposit(){
+ let a=document.getElementById('dep_amount').value;
+ let t=document.getElementById('dep_trx').value;
+ if(!a||!t){alert('رقم اور Trx ID لکھیں');return;}
+ let msg=`*DEPOSIT*%0AAmount:${a}%0ATrx:${t}%0AFrom:${document.getElementById('dep_number').value}%0ATo: 03360063760 Yasir Naseer`;
+ window.open(`https://wa.me/923228664858?text=${msg}`,'_blank');
+ document.getElementById('dep_msg').innerText="واٹس ایپ پر بھیج دیا گیا";
+}
+function submitWithdraw(){
+ let a=document.getElementById('with_amount').value;
+ let ac=document.getElementById('with_account').value;
+ if(!a||!ac){alert('تفصیل لکھیں');return;}
+ let msg=`*WITHDRAW*%0AAmount:${a}%0AAccount:${ac}%0AName:${document.getElementById('with_name').value}`;
+ window.open(`https://wa.me/923228664858?text=${msg}`,'_blank');
+ document.getElementById('with_msg').innerText="ریکویسٹ بھیج دی گئی";
+}
+</script>
 </body>
 </html>
