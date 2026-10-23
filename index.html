@@ -1,107 +1,126 @@
+
 <!DOCTYPE html>
 <html lang="ur">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHAMI DISCOUNT SHOP - Dunyapur | Upto 40% OFF</title>
+<title>SHAMI DISCOUNT SHOP - 50 Models</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 body{background:#f6f6f6;color:#222}
 header{background:#000;color:#fff;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
-.banner{background:#ffcc00;text-align:center;padding:10px;font-weight:800;font-size:14px;letter-spacing:.5px}
-.hero{background:linear-gradient(135deg,#000,#333);color:#fff;text-align:center;padding:55px 6%}
-.hero h1{font-size:38px;font-weight:800}
-.hero h1 span{color:#ffcc00}
-.hero p{margin:12px auto;opacity:.9;max-width:600px}
-.btn{background:#ffcc00;color:#000;padding:13px 30px;border-radius:30px;text-decoration:none;font-weight:800;display:inline-block;margin-top:10px}
-.section{padding:28px 4%}
-.title{text-align:center;font-size:24px;font-weight:800}
-.sub{text-align:center;color:#777;font-size:13px;margin:6px 0 22px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px}
-.card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #eee;box-shadow:0 3px 12px rgba(0,0,0,.06)}
-.card img{width:100%;height:175px;object-fit:contain;background:#fff;padding:8px}
+.banner{background:#ffcc00;color:#000;text-align:center;padding:10px;font-weight:800;font-size:14px}
+.hero{background:linear-gradient(135deg,#000,#222);color:#fff;text-align:center;padding:50px 6%}
+.hero h1{font-size:34px;font-weight:800} .hero h1 span{color:#ffcc00}
+.btn{background:#ffcc00;color:#000;padding:13px 30px;border-radius:30px;text-decoration:none;font-weight:800;display:inline-block;margin-top:12px}
+.section{padding:20px 3%}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:12px}
+.card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #eee;cursor:pointer;box-shadow:0 3px 12px rgba(0,0,0,.06)}
+.card img{width:100%;height:170px;object-fit:contain;background:#fff;padding:8px}
 .info{padding:10px 12px 14px}
-.info h4{font-size:13px;line-height:1.4;height:38px;overflow:hidden}
-.price{color:#111;font-weight:800;font-size:16px;margin-top:5px}
-.price span{color:#e60000}
+.info h4{font-size:12.5px;height:36px;overflow:hidden;line-height:1.3}
+.price{color:#111;font-weight:800;font-size:15px;margin-top:4px}
+.price span{color:#111}
 .old{font-size:11px;color:#888;text-decoration:line-through;margin-left:5px}
-.off{background:#e60000;color:#fff;font-size:10px;padding:2px 6px;border-radius:4px;margin-left:6px}
-.order{display:block;margin-top:10px;background:#000;color:#fff;text-align:center;padding:9px;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600}
+.off{font-size:10px;padding:2px 6px;border-radius:4px;margin-left:6px;font-weight:800}
+.off20{background:#22c55e;color:#fff} .off30{background:#ffcc00;color:#000} .off50{background:#000;color:#ffcc00;border:1px solid #ffcc00}
+.order{display:block;margin-top:8px;background:#000;color:#ffcc00;text-align:center;padding:8px;border-radius:8px;text-decoration:none;font-size:12px;font-weight:700}
 .pay-box{background:#fff;border-radius:16px;padding:22px;border:2px dashed #ffcc00;margin-top:30px;text-align:center}
-.pay-box h3{font-size:20px;margin-bottom:10px}
-.qr{width:220px;height:220px;background:#fff;border-radius:12px;margin:12px auto;display:flex;align-items:center;justify-content:center;border:1px solid #ddd;overflow:hidden}
+.qr{width:220px;height:220px;margin:12px auto;border:1px solid #ddd;border-radius:12px;overflow:hidden;padding:6px;background:#fff}
 .qr img{width:100%;height:100%;object-fit:contain}
-footer{background:#000;color:#aaa;text-align:center;padding:28px 6%;font-size:13px;line-height:1.8}
-.wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 5px 18px rgba(0,0,0,.35)}
+#gallery{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:999;flex-direction:column}
+#gallery img{max-width:90%;max-height:68%;border-radius:12px;background:#fff;padding:8px}
+#gallery .close{position:absolute;top:12px;right:18px;color:#ffcc00;font-size:34px;cursor:pointer}
+#gallery .nav{margin-top:14px;display:flex;gap:10px}
+#gallery .nav button{background:#ffcc00;border:none;padding:8px 16px;border-radius:20px;font-weight:800;cursor:pointer}
+footer{background:#000;color:#aaa;text-align:center;padding:22px 6%;font-size:12px}
+.wa{position:fixed;bottom:18px;right:18px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none}
 </style>
 </head>
 <body>
-<div class="banner">🔥 SHAMI DISCOUNT SHOP - 40% OFF SALE - 5000 Se 1 Lakh Tak 🔥</div>
-<header>
-<h1>SHAMI DISCOUNT SHOP</h1>
-<div style="font-size:12px">📞 0322-8664858</div>
-</header>
-<div class="hero">
-<h1>ALL MOBILE <span>40% OFF</span></h1>
-<p>5,000 Wala Mobile Ab Sirf 5,000 Me - 1 Lakh Wala Mobile Sirf 60,000 Me - PTA Approved</p>
-<p style="font-size:13px">Dunyapur Lodhran Road, Near Main Bazaar</p>
-<a class="btn" href="https://wa.me/923228664858?text=Assalamualaikum%20Shami%20Bhai%20Sale%20Wala%20Mobile%20Chahiye">WhatsApp Par Order Karen</a>
-</div>
-
-<div class="section">
-<h2 class="title">Budget Phones - 5,000 Se Start</h2>
-<p class="sub">40% Discount Ke Baad Final Price</p>
-<div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=400"><div class="info"><h4>Itel A50 - 2/32 Box Pack</h4><p class="price"><span>Rs. 5,000</span><span class="old">Rs. 8,300</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Itel%20A50%205000%20Wala%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=400"><div class="info"><h4>Tecno Pop 8 - 4/64 Box Pack</h4><p class="price"><span>Rs. 8,500</span><span class="old">Rs. 14,200</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Tecno%20Pop%208%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?q=80&w=400"><div class="info"><h4>Infinix Smart 8 - 4/64</h4><p class="price"><span>Rs. 10,000</span><span class="old">Rs. 16,700</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Infinix%20Smart%208%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?q=80&w=400"><div class="info"><h4>Samsung A12 - 4/64 PTA</h4><p class="price"><span>Rs. 12,000</span><span class="old">Rs. 20,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Samsung%20A12%20Chahiye">Order Now</a></div></div>
-</div>
-</div>
-
-<div class="section">
-<h2 class="title">Mid Range - 15K To 40K</h2>
-<p class="sub">All PTA Approved / Box Pack Available</p>
-<div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?q=80&w=400"><div class="info"><h4>Infinix Hot 40 - 8/128</h4><p class="price"><span>Rs. 18,000</span><span class="old">Rs. 30,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Infinix%20Hot%2040%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?q=80&w=400"><div class="info"><h4>Tecno Spark 20 Pro - 8/256</h4><p class="price"><span>Rs. 24,000</span><span class="old">Rs. 40,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Tecno%20Spark%2020%20Pro%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?q=80&w=400"><div class="info"><h4>Samsung A32 - 6/128</h4><p class="price"><span>Rs. 27,000</span><span class="old">Rs. 45,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Samsung%20A32%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=400"><div class="info"><h4>Vivo Y22 - 4/64 Box Pack</h4><p class="price"><span>Rs. 21,000</span><span class="old">Rs. 35,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Vivo%20Y22%20Chahiye">Order Now</a></div></div>
-</div>
-</div>
-
-<div class="section">
-<h2 class="title">iPhone - Premium Collection</h2>
-<p class="sub">1 Lakh Wala Phone Sirf 60,000 Me - 40% OFF</p>
-<div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=400"><div class="info"><h4>iPhone 11 - 64GB PTA</h4><p class="price"><span>Rs. 48,000</span><span class="old">Rs. 80,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=iPhone%2011%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=400"><div class="info"><h4>iPhone 12 - 128GB JV</h4><p class="price"><span>Rs. 60,000</span><span class="old">Rs. 1,00,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=iPhone%2012%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=400"><div class="info"><h4>iPhone 13 Pro Max - 128GB</h4><p class="price"><span>Rs. 90,000</span><span class="old">Rs. 1,50,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=iPhone%2013%20Pro%20Max%20Chahiye">Order Now</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?q=80&w=400"><div class="info"><h4>iPhone 14 - 128GB PTA</h4><p class="price"><span>Rs. 1,00,000</span><span class="old">Rs. 1,66,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=iPhone%2014%20Chahiye">Order Now</a></div></div>
-</div>
-
+<div class="banner">🔥 SHAMI DISCOUNT SHOP - 20% | 30% | 50% OFF - 50 MODELS 🔥</div>
+<header><h1 style="font-size:18px">SHAMI DISCOUNT SHOP</h1><div style="font-size:12px">📞 0322-8664858</div></header>
+<div class="hero"><h1>UPTO <span>50% OFF</span> SALE</h1><p style="opacity:.9;margin-top:8px">50 Mobiles - Har Mobile Par Alag Discount - Gallery Ke Liye Pic Par Click Karen</p><a class="btn" href="https://wa.me/923228664858">WhatsApp Order</a></div>
+<div class="section"><div class="grid" id="productGrid"></div>
 <div class="pay-box">
-<h3>💳 Online Payment - Easypaisa</h3>
-<p>Number: <b>03360063760 - YASIR NASEER</b></p>
-<p style="font-size:12px">Scan this QR code to send money to YASIR NASEER's easypaisa account</p>
-<div class="qr">
-<img src="data:image/jpeg;base64,__QR_DATA__" alt="YASIR NASEER Easypaisa QR">
-</div>
-<p style="font-weight:800;margin-top:8px">YASIR NASEER</p>
-<p style="font-size:12px;color:#666">MSISDN: ******3760</p>
-<p style="font-size:12px;color:#666;margin-top:8px">Payment ka Screenshot WhatsApp par bhejen, Order Confirm ho jayega</p>
-<a class="btn" href="https://wa.me/923228664858?text=Payment%20Screenshot%20Bhej%20Raha%20Hun">Payment Screenshot Bhejen</a>
-</div>
-</div>
-
-<footer>
-<b style="color:#fff;font-size:18px">SHAMI DISCOUNT SHOP</b><br>
-📍 Dunyapur, Lodhran Road, Near Main Bazaar, Punjab, Pakistan<br>
-📞 WhatsApp / Easypaisa / JazzCash: 0322-8664858<br>
-🚚 Cash On Delivery All Pakistan | 7 Days Check Warranty<br><br>
-© 2026 Shami Discount Shop
-</footer>
+<h3>💳 Easypaisa Payment</h3>
+<p><b>03360063760 - YASIR NASEER</b></p>
+<div class="qr"><img src="qr.jpg" onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=03360063760-YASIR-NASEER'" alt="QR"></div>
+<p style="font-size:12px;color:#666">Payment Screenshot WhatsApp par bhejen</p>
+<a class="btn" href="https://wa.me/923228664858">Screenshot Bhejen</a>
+</div></div>
+<div id="gallery"><span class="close" onclick="closeGallery()">×</span><img id="gImg" src=""><div class="nav"><button onclick="prevImg()">⬅️</button><button onclick="nextImg()">➡️</button></div><p id="gName" style="color:#ffcc00;margin-top:10px;font-weight:800;text-align:center;padding:0 15px"></p><p id="gPrice" style="color:#fff;margin-top:4px"></p></div>
+<footer>SHAMI DISCOUNT SHOP - Dunyapur Lodhran<br>WhatsApp: 0322-8664858 | Easypaisa: 03360063760 Yasir Naseer<br>© 2026</footer>
 <a class="wa" href="https://wa.me/923228664858">W</a>
+<script>
+const mobiles=[
+{name:"Itel A50 2/32",price:5000,old:8300,disc:"40% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400","https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"]},
+{name:"Tecno Pop 8 4/64",price:8500,old:12100,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400","https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
+{name:"Infinix Smart 8 4/64",price:10000,old:12500,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
+{name:"Samsung A12 4/64 PTA",price:12000,old:24000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=400"]},
+{name:"Infinix Hot 40 8/128",price:18000,old:25700,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=400","https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
+{name:"Tecno Spark 20 Pro 8/256",price:24000,old:30000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
+{name:"Samsung A32 6/128",price:27000,old:54000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=400"]},
+{name:"Vivo Y22 4/64 Box Pack",price:21000,old:30000,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
+{name:"iPhone 11 64GB PTA",price:48000,old:60000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400","https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
+{name:"iPhone 12 128GB JV",price:60000,old:120000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
+{name:"Infinix Note 30 8/128",price:26000,old:37100,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400"]},
+{name:"Redmi 12 6/128",price:22500,old:28100,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"]},
+{name:"Realme C53 6/128",price:19500,old:39000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
+{name:"Vivo Y17s 4/128",price:20500,old:29200,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=400"]},
+{name:"Samsung A14 4/64",price:23000,old:28700,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=400"]},
+{name:"Tecno Camon 20 8/256",price:28500,old:57000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
+{name:"Infinix Hot 30 8/128",price:22000,old:31400,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=400"]},
+{name:"Oppo A18 4/128",price:20000,old:25000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
+{name:"iPhone 13 Pro Max 128GB",price:90000,old:180000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400"]},
+{name:"Samsung A54 8/128",price:45000,old:64200,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400"]},
+{name:"Redmi Note 13 8/128",price:32000,old:40000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"]},
+{name:"Infinix Zero 30 8/256",price:35000,old:70000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
+{name:"Tecno Pova 5 Pro 8/128",price:27500,old:39200,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=400"]},
+{name:"Vivo Y27 6/128",price:25000,old:31200,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=400"]},
+{name:"Realme Note 50 4/64",price:15500,old:31000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
+{name:"Samsung A24 6/128",price:29500,old:42100,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=400"]},
+{name:"Oppo Reno 10 8/256",price:48000,old:60000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
+{name:"iPhone 14 128GB PTA",price:100000,old:200000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
+{name:"Infinix Hot 40 Pro 8/128",price:27000,old:38500,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400"]},
+{name:"Tecno Spark 20 8/256",price:21500,old:26800,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"]},
+{name:"Redmi Note 12 8/128",price:28000,old:56000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
+{name:"Vivo V29e 8/256",price:42000,old:60000,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=400"]},
+{name:"Samsung S21 FE 8/128",price:48000,old:60000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=400"]},
+{name:"Realme C55 8/256",price:24000,old:48000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
+{name:"Oppo A57 4/64",price:18000,old:25700,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=400"]},
+{name:"Infinix Note 12 6/128",price:23500,old:29300,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
+{name:"iPhone 11 Pro 256GB",price:65000,old:130000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400"]},
+{name:"Tecno Spark Go 2024 4/64",price:13500,old:19200,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400"]},
+{name:"Samsung A15 6/128",price:26500,old:33100,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"]},
+{name:"Redmi 13C 4/128",price:16500,old:33000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
+{name:"Vivo Y36 8/128",price:31000,old:44200,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=400"]},
+{name:"Infinix Smart 8 Pro 4/128",price:14000,old:17500,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=400"]},
+{name:"Oppo A38 4/128",price:19500,old:39000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
+{name:"Realme 11 8/256",price:33000,old:47100,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=400"]},
+{name:"Samsung S23 Ultra 12/256",price:145000,old:181000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
+{name:"Tecno Camon 20 Pro 8/256",price:32000,old:64000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400"]},
+{name:"iPhone 12 Pro 128GB",price:78000,old:111400,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400"]},
+{name:"Infinix Hot 30 Play 8/128",price:19500,old:24300,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"]},
+{name:"Vivo Y100 8/128",price:36500,old:73000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
+{name:"Redmi A3 4/128",price:12500,old:17800,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=400"]}
+];
+let curPics=[],curIdx=0,curMob=null;
+const grid=document.getElementById('productGrid');
+function render(){
+grid.innerHTML=mobiles.map((m,i)=>`
+<div class="card" onclick="openGallery(${i},0)">
+<img src="${m.pics[0]}" loading="lazy">
+<div class="info"><h4>${m.name}</h4><p class="price">Rs. ${m.price.toLocaleString()} <span class="old">Rs. ${m.old.toLocaleString()}</span> <span class="off ${m.cls}">${m.disc}</span></p><a class="order" onclick="event.stopPropagation()" href="https://wa.me/923228664858?text=${encodeURIComponent(m.name+' - Rs.'+m.price+' Chahiye')}">Order Now</a></div>
+</div>`).join('');
+}
+function openGallery(mi,pi){curMob=mobiles[mi];curPics=curMob.pics;curIdx=pi;document.getElementById('gName').innerText=curMob.name;document.getElementById('gPrice').innerText='Rs. '+curMob.price.toLocaleString()+' | '+curMob.disc;showImg();document.getElementById('gallery').style.display='flex';}
+function showImg(){document.getElementById('gImg').src=curPics[curIdx];}
+function closeGallery(){document.getElementById('gallery').style.display='none';}
+function nextImg(){curIdx=(curIdx+1)%curPics.length;showImg();}
+function prevImg(){curIdx=(curIdx-1+curPics.length)%curPics.length;showImg();}
+render();
+</script>
 </body>
 </html>
