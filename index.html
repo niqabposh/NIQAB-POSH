@@ -1,101 +1,104 @@
 
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="ur">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHAMI MOBILES - ڈسکاؤنٹ موبائل شاپ</title>
+<title>SHAMI DISCOUNT SHOP - Dunyapur | Upto 40% OFF</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family: 'Noto Nastaliq Urdu', sans-serif}
-body{background:#f1f5f9;color:#0f172a}
-header{background:#0f172a;color:#fff;padding:18px;text-align:center;position:sticky;top:0;z-index:10}
-header h1{color:#fbbf24;font-size:24px}
-header p{font-size:12px;color:#94a3b8;margin-top:4px}
-.banner{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;padding:25px 15px;text-align:center}
-.banner h2{font-size:22px;color:#fbbf24}
-.banner p{margin-top:8px;font-size:14px}
-.products{max-width:900px;margin:20px auto;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 12px}
-.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08);text-align:center;padding-bottom:12px}
-.card img{width:100%;height:160px;object-fit:contain;background:#f8fafc;padding:10px}
-.card .name{font-weight:800;margin-top:8px;font-size:15px}
-.card .price{color:#16a34a;font-weight:800;margin-top:4px}
-.card .old-price{color:#94a3b8;text-decoration:line-through;font-size:12px}
-.card .off{background:#ef4444;color:#fff;font-size:11px;padding:3px 8px;border-radius:20px;display:inline-block;margin-top:5px}
-.card button{margin-top:10px;background:#0f172a;color:#fbbf24;border:none;padding:8px 20px;border-radius:20px;font-weight:700;cursor:pointer}
-.contact{max-width:900px;margin:25px auto;background:#fff;padding:20px;border-radius:16px;text-align:center;border:2px dashed #fbbf24}
-.contact h3{color:#0f172a}
-.wa-btn{display:inline-block;margin-top:12px;background:#22c55e;color:#fff;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:800}
-footer{background:#0f172a;color:#94a3b8;text-align:center;padding:15px;font-size:11px;margin-top:20px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f6f6f6;color:#222}
+header{background:#000;color:#fff;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
+.banner{background:#ffcc00;text-align:center;padding:10px;font-weight:800;font-size:14px;letter-spacing:.5px}
+.hero{background:linear-gradient(135deg,#000,#333);color:#fff;text-align:center;padding:55px 6%}
+.hero h1{font-size:38px;font-weight:800}
+.hero h1 span{color:#ffcc00}
+.hero p{margin:12px auto;opacity:.9;max-width:600px}
+.btn{background:#ffcc00;color:#000;padding:13px 30px;border-radius:30px;text-decoration:none;font-weight:800;display:inline-block;margin-top:10px}
+.section{padding:28px 4%}
+.title{text-align:center;font-size:24px;font-weight:800}
+.sub{text-align:center;color:#777;font-size:13px;margin:6px 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:14px}
+.card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #eee;box-shadow:0 3px 12px rgba(0,0,0,.06)}
+.card img{width:100%;height:175px;object-fit:contain;background:#fff;padding:8px}
+.info{padding:10px 12px 14px}
+.info h4{font-size:13px;line-height:1.4;height:38px;overflow:hidden}
+.price{color:#111;font-weight:800;font-size:16px;margin-top:5px}
+.price span{color:#e60000}
+.old{font-size:11px;color:#888;text-decoration:line-through;margin-left:5px}
+.off{background:#e60000;color:#fff;font-size:10px;padding:2px 6px;border-radius:4px;margin-left:6px}
+.order{display:block;margin-top:10px;background:#000;color:#fff;text-align:center;padding:9px;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600}
+.pay-box{background:#fff;border-radius:16px;padding:22px;border:2px dashed #ffcc00;margin-top:30px;text-align:center}
+.pay-box h3{font-size:20px;margin-bottom:10px}
+.qr{width:200px;height:200px;background:#f0f0f0;border-radius:12px;margin:12px auto;display:flex;align-items:center;justify-content:center;font-size:12px;color:#666;border:1px solid #ddd}
+footer{background:#000;color:#aaa;text-align:center;padding:28px 6%;font-size:13px;line-height:1.8}
+.wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 5px 18px rgba(0,0,0,.35)}
 </style>
 </head>
 <body>
-
+<div class="banner">🔥 SHAMI DISCOUNT SHOP - 40% OFF SALE - 5000 Se 1 Lakh Tak 🔥</div>
 <header>
-<h1>📱 SHAMI MOBILES</h1>
-<p>دنیا پور - بہترین ڈسکاؤنٹ موبائل شاپ</p>
+<h1>SHAMI DISCOUNT SHOP</h1>
+<div style="font-size:12px">📞 0322-8664858</div>
 </header>
-
-<div class="banner">
-<h2>🔥 عید ڈسکاؤنٹ آفر - 50% تک رعایت</h2>
-<p>تمام موبائلز پر فری ڈیلیوری اور 1 سال وارنٹی</p>
+<div class="hero">
+<h1>ALL MOBILE <span>40% OFF</span></h1>
+<p>5,000 Wala Mobile Ab Sirf 5,000 Me - 1 Lakh Wala Mobile Sirf 60,000 Me - PTA Approved</p>
+<p style="font-size:13px">Dunyapur Lodhran Road, Near Main Bazaar</p>
+<a class="btn" href="https://wa.me/923228664858?text=Assalamualaikum%20Shami%20Bhai%20Sale%20Wala%20Mobile%20Chahiye">WhatsApp Par Order Karen</a>
 </div>
 
-<div class="products">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97">
-<div class="name">iPhone 15 Pro Max</div>
-<div class="old-price">Rs. 450,000</div>
-<div class="price">Rs. 385,000</div>
-<div class="off">15% OFF</div>
-<br><button onclick="order('iPhone 15 Pro Max')">آرڈر کریں</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd">
-<div class="name">Samsung S24 Ultra</div>
-<div class="old-price">Rs. 380,000</div>
-<div class="price">Rs. 315,000</div>
-<div class="off">20% OFF</div>
-<br><button onclick="order('Samsung S24 Ultra')">آرڈر کریں</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
-<div class="name">Infinix Hot 40 Pro</div>
-<div class="old-price">Rs. 55,000</div>
-<div class="price">Rs. 42,999</div>
-<div class="off">22% OFF</div>
-<br><button onclick="order('Infinix Hot 40 Pro')">آرڈر کریں</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f">
-<div class="name">Redmi Note 13</div>
-<div class="old-price">Rs. 65,000</div>
-<div class="price">Rs. 51,500</div>
-<div class="off">18% OFF</div>
-<br><button onclick="order('Redmi Note 13')">آرڈر کریں</button>
+<div class="section">
+<h2 class="title">Budget Phones - 5,000 Se Start</h2>
+<p class="sub">40% Discount Ke Baad Final Price</p>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=400"><div class="info"><h4>Itel A50 - 2/32 Box Pack</h4><p class="price"><span>Rs. 5,000</span><span class="old">Rs. 8,300</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Itel%20A50%205000%20Wala%20Chahiye">Order Now</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=400"><div class="info"><h4>Tecno Pop 8 - 4/64 Box Pack</h4><p class="price"><span>Rs. 8,500</span><span class="old">Rs. 14,200</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Tecno%20Pop%208%20Chahiye">Order Now</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?q=80&w=400"><div class="info"><h4>Infinix Smart 8 - 4/64</h4><p class="price"><span>Rs. 10,000</span><span class="old">Rs. 16,700</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Infinix%20Smart%208%20Chahiye">Order Now</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?q=80&w=400"><div class="info"><h4>Samsung A12 - 4/64 PTA</h4><p class="price"><span>Rs. 12,000</span><span class="old">Rs. 20,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Samsung%20A12%20Chahiye">Order Now</a></div></div>
 </div>
 </div>
 
-<div class="contact">
-<h3>📞 رابطہ کریں</h3>
-<p style="margin-top:8px">Easypaisa / JazzCash اکاؤنٹ</p>
-<p style="font-size:20px;font-weight:800;color:#0f172a;margin-top:5px">03360063760<br><span style="font-size:14px">Yasir Naseer</span></p>
-<a class="wa-btn" href="https://wa.me/923228664858">واٹس ایپ پر آرڈر کریں</a>
-<p style="font-size:11px;color:#64748b;margin-top:10px">دنیا پور، لودھراں - پورے پاکستان میں ڈیلیوری</p>
+<div class="section">
+<h2 class="title">Mid Range - 15K To 40K</h2>
+<p class="sub">All PTA Approved / Box Pack Available</p>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?q=80&w=400"><div class="info"><h4>Infinix Hot 40 - 8/128</h4><p class="price"><span>Rs. 18,000</span><span class="old">Rs. 30,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Infinix%20Hot%2040%20Chahiye">Order Now</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?q=80&w=400"><div class="info"><h4>Tecno Spark 20 Pro - 8/256</h4><p class="price"><span>Rs. 24,000</span><span class="old">Rs. 40,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Tecno%20Spark%2020%20Pro%20Chahiye">Order Now</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?q=80&w=400"><div class="info"><h4>Samsung A32 - 6/128</h4><p class="price"><span>Rs. 27,000</span><span class="old">Rs. 45,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Samsung%20A32%20Chahiye">Order Now</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=400"><div class="info"><h4>Vivo Y22 - 4/64 Box Pack</h4><p class="price"><span>Rs. 21,000</span><span class="old">Rs. 35,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=Vivo%20Y22%20Chahiye">Order Now</a></div></div>
+</div>
+</div>
+
+<div class="section">
+<h2 class="title">iPhone - Premium Collection</h2>
+<p class="sub">1 Lakh Wala Phone Sirf 60,000 Me - 40% OFF</p>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?q=80&w=400"><div class="info"><h4>iPhone 11 - 64GB PTA</h4><p class="price"><span>Rs. 48,000</span><span class="old">Rs. 80,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=iPhone%2011%20Chahiye">Order Now</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=400"><div class="info"><h4>iPhone 12 - 128GB JV</h4><p class="price"><span>Rs. 60,000</span><span class="old">Rs. 1,00,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=iPhone%2012%20Chahiye">Order Now</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=400"><div class="info"><h4>iPhone 13 Pro Max - 128GB</h4><p class="price"><span>Rs. 90,000</span><span class="old">Rs. 1,50,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=iPhone%2013%20Pro%20Max%20Chahiye">Order Now</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?q=80&w=400"><div class="info"><h4>iPhone 14 - 128GB PTA</h4><p class="price"><span>Rs. 1,00,000</span><span class="old">Rs. 1,66,000</span><span class="off">40% OFF</span></p><a class="order" href="https://wa.me/923228664858?text=iPhone%2014%20Chahiye">Order Now</a></div></div>
+</div>
+
+<div class="pay-box">
+<h3>💳 Online Payment - Easypaisa / JazzCash</h3>
+<p>Number: <b>0322-8664858 - Muhammad Shami</b></p>
+<div class="qr">
+Apna Easypaisa / JazzCash QR Scanner ka Screenshot yahan lagayen<br>Abhi ke liye Number par Send karen
+</div>
+<p style="font-size:12px;color:#666;margin-top:8px">Payment ka Screenshot WhatsApp par bhejen, Order Confirm ho jayega</p>
+<a class="btn" href="https://wa.me/923228664858?text=Payment%20Screenshot%20Bhej%20Raha%20Hun">Payment Screenshot Bhejen</a>
+</div>
 </div>
 
 <footer>
-© 2026 SHAMI MOBILES - تمام حقوق محفوظ ہیں
+<b style="color:#fff;font-size:18px">SHAMI DISCOUNT SHOP</b><br>
+📍 Katachi, Behriya Town, Near Main Bazaar, Sindh, Pakistan<br>
+📞 WhatsApp / Easypaisa / JazzCash: 0322-8664858<br>
+🚚 Cash On Delivery All Pakistan | 7 Days Check Warranty<br><br>
+© 2026 Shami Discount Shop - Sasta Tareen Mobile Shop
 </footer>
-
-<script>
-function order(name){
- let msg = `السلام علیکم! مجھے ${name} چاہیے۔ کیا یہ ڈسکاؤنٹ میں موجود ہے؟`;
- window.open(`https://wa.me/923228664858?text=${encodeURIComponent(msg)}`, '_blank');
-}
-</script>
-
+<a class="wa" href="https://wa.me/923228664858">W</a>
 </body>
 </html>
