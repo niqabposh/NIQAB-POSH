@@ -1,87 +1,101 @@
+
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHAMI GAMES HUB - 8 Games</title>
+<title>SHAMI MOBILES - ڈسکاؤنٹ موبائل شاپ</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
-body{background:#0a0e1a;color:#fff}
-header{background:#111a30;padding:15px;text-align:center;border-bottom:2px solid #f5c542;position:sticky;top:0;z-index:10}
-header h1{color:#f5c542}
-.top-bar{display:flex;justify-content:space-between;padding:10px 15px;background:#1a233a;font-size:13px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:15px;max-width:700px;margin:auto}
-.game-card{background:#1e2a4a;border:1px solid #2a3655;border-radius:16px;padding:20px 10px;text-align:center;cursor:pointer;transition:.2s}
-.game-card:active{transform:scale(.95)}
-.game-card .icon{font-size:38px}
-.game-card .name{margin-top:8px;font-weight:700;font-size:14px}
-.game-card .play{margin-top:8px;background:#f5c542;color:#000;border:none;padding:6px 18px;border-radius:20px;font-weight:700;font-size:12px}
-.acc-box{max-width:700px;margin:15px auto;background:#111a30;border:2px dashed #f5c542;padding:14px;border-radius:12px;text-align:center}
+*{margin:0;padding:0;box-sizing:border-box;font-family: 'Noto Nastaliq Urdu', sans-serif}
+body{background:#f1f5f9;color:#0f172a}
+header{background:#0f172a;color:#fff;padding:18px;text-align:center;position:sticky;top:0;z-index:10}
+header h1{color:#fbbf24;font-size:24px}
+header p{font-size:12px;color:#94a3b8;margin-top:4px}
+.banner{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;padding:25px 15px;text-align:center}
+.banner h2{font-size:22px;color:#fbbf24}
+.banner p{margin-top:8px;font-size:14px}
+.products{max-width:900px;margin:20px auto;display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 12px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08);text-align:center;padding-bottom:12px}
+.card img{width:100%;height:160px;object-fit:contain;background:#f8fafc;padding:10px}
+.card .name{font-weight:800;margin-top:8px;font-size:15px}
+.card .price{color:#16a34a;font-weight:800;margin-top:4px}
+.card .old-price{color:#94a3b8;text-decoration:line-through;font-size:12px}
+.card .off{background:#ef4444;color:#fff;font-size:11px;padding:3px 8px;border-radius:20px;display:inline-block;margin-top:5px}
+.card button{margin-top:10px;background:#0f172a;color:#fbbf24;border:none;padding:8px 20px;border-radius:20px;font-weight:700;cursor:pointer}
+.contact{max-width:900px;margin:25px auto;background:#fff;padding:20px;border-radius:16px;text-align:center;border:2px dashed #fbbf24}
+.contact h3{color:#0f172a}
+.wa-btn{display:inline-block;margin-top:12px;background:#22c55e;color:#fff;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:800}
+footer{background:#0f172a;color:#94a3b8;text-align:center;padding:15px;font-size:11px;margin-top:20px}
 </style>
 </head>
 <body>
+
 <header>
-<h1>🎮 SHAMI GAMES HUB</h1>
-<p style="font-size:11px;color:#aaa">8 گیمز ایک جگہ - ڈیمو پوائنٹس سے کھیلیں</p>
+<h1>📱 SHAMI MOBILES</h1>
+<p>دنیا پور - بہترین ڈسکاؤنٹ موبائل شاپ</p>
 </header>
 
-<div class="top-bar">
-<span>💰 پوائنٹس: <b id="pts" style="color:#f5c542">1000</b></span>
-<span>👤 Yasir Naseer</span>
+<div class="banner">
+<h2>🔥 عید ڈسکاؤنٹ آفر - 50% تک رعایت</h2>
+<p>تمام موبائلز پر فری ڈیلیوری اور 1 سال وارنٹی</p>
 </div>
 
-<div class="acc-box">
-<b>Easypaisa Deposit:</b> <span style="color:#f5c542;font-weight:800">03360063760</span> - Yasir Naseer
-<br><span style="font-size:11px;color:#888">یہ صرف معلومات کے لیے ہے، گیم میں اصلی پیسہ نہیں لگتا</span>
+<div class="products">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97">
+<div class="name">iPhone 15 Pro Max</div>
+<div class="old-price">Rs. 450,000</div>
+<div class="price">Rs. 385,000</div>
+<div class="off">15% OFF</div>
+<br><button onclick="order('iPhone 15 Pro Max')">آرڈر کریں</button>
 </div>
 
-<div class="grid">
-<div class="game-card" onclick="openGame('tiger')"><div class="icon">🐯🐉</div><div class="name">Tiger Dragon</div><button class="play">Play</button></div>
-<div class="game-card" onclick="openGame('crash')"><div class="icon">✈️</div><div class="name">Crash Aviator</div><button class="play">Play</button></div>
-<div class="game-card" onclick="openGame('mines')"><div class="icon">💣</div><div class="name">Mines</div><button class="play">Play</button></div>
-<div class="game-card" onclick="openGame('slot')"><div class="icon">🎰</div><div class="name">Slot Machine</div><button class="play">Play</button></div>
-<div class="game-card" onclick="openGame('dice')"><div class="icon">🎲</div><div class="name">Dice Roll</div><button class="play">Play</button></div>
-<div class="game-card" onclick="openGame('coin')"><div class="icon">🪙</div><div class="name">Coin Flip</div><button class="play">Play</button></div>
-<div class="game-card" onclick="openGame('number')"><div class="icon">🔢</div><div class="name">Number Guess</div><button class="play">Play</button></div>
-<div class="game-card" onclick="openGame('card')"><div class="icon">🃏</div><div class="name">Card Match</div><button class="play">Play</button></div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd">
+<div class="name">Samsung S24 Ultra</div>
+<div class="old-price">Rs. 380,000</div>
+<div class="price">Rs. 315,000</div>
+<div class="off">20% OFF</div>
+<br><button onclick="order('Samsung S24 Ultra')">آرڈر کریں</button>
 </div>
 
-<div style="max-width:700px;margin:auto;padding:15px">
-<div id="gameArea" style="background:#1a233a;border-radius:16px;padding:20px;display:none;text-align:center;min-height:200px">
-<h2 id="gameTitle" style="color:#f5c542"></h2>
-<div id="gameContent" style="margin-top:15px;font-size:18px"></div>
-<button onclick="closeGame()" style="margin-top:15px;background:#333;color:#fff;border:none;padding:8px 20px;border-radius:20px">واپس جائیں</button>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<div class="name">Infinix Hot 40 Pro</div>
+<div class="old-price">Rs. 55,000</div>
+<div class="price">Rs. 42,999</div>
+<div class="off">22% OFF</div>
+<br><button onclick="order('Infinix Hot 40 Pro')">آرڈر کریں</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f">
+<div class="name">Redmi Note 13</div>
+<div class="old-price">Rs. 65,000</div>
+<div class="price">Rs. 51,500</div>
+<div class="off">18% OFF</div>
+<br><button onclick="order('Redmi Note 13')">آرڈر کریں</button>
 </div>
 </div>
+
+<div class="contact">
+<h3>📞 رابطہ کریں</h3>
+<p style="margin-top:8px">Easypaisa / JazzCash اکاؤنٹ</p>
+<p style="font-size:20px;font-weight:800;color:#0f172a;margin-top:5px">03360063760<br><span style="font-size:14px">Yasir Naseer</span></p>
+<a class="wa-btn" href="https://wa.me/923228664858">واٹس ایپ پر آرڈر کریں</a>
+<p style="font-size:11px;color:#64748b;margin-top:10px">دنیا پور، لودھراں - پورے پاکستان میں ڈیلیوری</p>
+</div>
+
+<footer>
+© 2026 SHAMI MOBILES - تمام حقوق محفوظ ہیں
+</footer>
 
 <script>
-let points=1000;
-function openGame(type){
- document.getElementById('gameArea').style.display='block';
- window.scrollTo(0, document.getElementById('gameArea').offsetTop);
- let title=document.getElementById('gameTitle');
- let content=document.getElementById('gameContent');
- 
- if(type==='tiger'){ title.innerText='🐯 Tiger Dragon'; content.innerHTML=`<p>Tiger: <b id="t">?</b> | Dragon: <b id="d">?</b></p><br><button onclick="playTiger()" style="padding:10px 25px;background:#f5c542;border:none;border-radius:10px;font-weight:700">چلائیں</button><p id="tr" style="margin-top:10px;color:#22c55e"></p>`; }
- if(type==='crash'){ title.innerText='✈️ Crash'; content.innerHTML=`<p>Multiplier: <b id="mult">1.00x</b></p><br><button onclick="playCrash()" style="padding:10px 25px;background:#22c55e;border:none;border-radius:10px;font-weight:700">Start Crash</button><p id="cr" style="margin-top:10px"></p>`; }
- if(type==='slot'){ title.innerText='🎰 Slot'; content.innerHTML=`<p style="font-size:40px" id="slots">🍒 | 🍋 | 🍒</p><br><button onclick="playSlot()" style="padding:10px 25px;background:#f5c542;border:none;border-radius:10px;font-weight:700">Spin</button><p id="sr"></p>`; }
- if(type==='dice'){ title.innerText='🎲 Dice'; content.innerHTML=`<p id="diceRes" style="font-size:40px">🎲</p><br><button onclick="playDice()" style="padding:10px 25px;background:#f5c542;border:none;border-radius:10px">Roll</button>`; }
- if(type==='coin'){ title.innerText='🪙 Coin'; content.innerHTML=`<p id="coinRes" style="font-size:40px">🪙</p><br><button onclick="playCoin()" style="padding:10px 20px;background:#f5c542;border:none;border-radius:10px;margin:5px">Head</button><button onclick="playCoin()" style="padding:10px 20px;background:#3b82f6;color:#fff;border:none;border-radius:10px;margin:5px">Tail</button>`; }
- if(type==='mines'){ title.innerText='💣 Mines - 5 بکس میں سے بم ڈھونڈیں'; content.innerHTML=`<div id="minesBox"></div>`; makeMines(); }
- if(type==='number'){ title.innerText='🔢 Number Guess (1-10)'; content.innerHTML=`<input id="numIn" type="number" placeholder="1-10" style="padding:10px;border-radius:8px;width:100px"><br><br><button onclick="playNum()" style="padding:10px 25px;background:#f5c542;border:none;border-radius:10px">Guess</button><p id="nr"></p>`; }
- if(type==='card'){ title.innerText='🃏 Card Match'; content.innerHTML=`<p id="cardRes">کارڈ پر کلک کریں</p><br><button onclick="playCard()" style="padding:10px 25px;background:#f5c542;border:none;border-radius:10px">Draw Card</button>`; }
+function order(name){
+ let msg = `السلام علیکم! مجھے ${name} چاہیے۔ کیا یہ ڈسکاؤنٹ میں موجود ہے؟`;
+ window.open(`https://wa.me/923228664858?text=${encodeURIComponent(msg)}`, '_blank');
 }
-
-function closeGame(){ document.getElementById('gameArea').style.display='none'; }
-
-function playTiger(){ let t=Math.floor(Math.random()*13)+1; let d=Math.floor(Math.random()*13)+1; document.getElementById('t').innerText=t; document.getElementById('d').innerText=d; let r=t>d?'Tiger جیتا':d>t?'Dragon جیتا':'Tie'; document.getElementById('tr').innerText=r; points+=10; document.getElementById('pts').innerText=points; }
-function playCrash(){ let m=(Math.random()*5+1).toFixed(2); document.getElementById('mult').innerText=m+'x'; document.getElementById('cr').innerText=m>2?'جیت گئے!':'کریش ہو گیا'; }
-function playSlot(){ let em=['🍒','🍋','🍊','⭐','💎']; let a=em[Math.floor(Math.random()*5)], b=em[Math.floor(Math.random()*5)], c=em[Math.floor(Math.random()*5)]; document.getElementById('slots').innerText=`${a} | ${b} | ${c}`; document.getElementById('sr').innerText=(a==b&&b==c)?'🎉 جیک پاٹ!':'دوبارہ کوشش کریں'; }
-function playDice(){ let n=Math.floor(Math.random()*6)+1; document.getElementById('diceRes').innerText='🎲 '+n; }
-function playCoin(){ let r=Math.random()>0.5?'Head':'Tail'; document.getElementById('coinRes').innerText=r; }
-function makeMines(){ let h=''; for(let i=0;i<5;i++){ h+=`<button onclick="this.innerText=Math.random()>0.5?'💎':'💣'; this.style.background=Math.random()>0.5?'#22c55e':'#ef4444'" style="width:60px;height:60px;margin:5px;font-size:24px;border:none;border-radius:10px;background:#2a3655">?</button>`; } document.getElementById('minesBox').innerHTML=h; }
-function playNum(){ let g=document.getElementById('numIn').value; let r=Math.floor(Math.random()*10)+1; document.getElementById('nr').innerText=`آپ نے ${g} لکھا، صحیح نمبر ${r} تھا - ${g==r?'جیت گئے!':'ہار گئے'}`; }
-function playCard(){ let c=Math.floor(Math.random()*13)+1; document.getElementById('cardRes').innerText='آپ کا کارڈ: '+c; }
 </script>
+
 </body>
 </html>
