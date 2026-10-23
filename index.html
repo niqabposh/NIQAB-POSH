@@ -1,74 +1,87 @@
-
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHAMI GAMES - Easypaisa Deposit</title>
+<title>SHAMI GAMES HUB - 8 Games</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
-body{background:#0f172a;color:#fff}
-header{background:#1e293b;padding:15px;text-align:center;border-bottom:2px solid #22c55e}
-header h1{color:#22c55e}
-.container{max-width:700px;margin:auto;padding:15px}
-.card{background:#1e293b;border-radius:16px;padding:20px;margin-bottom:18px;border:1px solid #334155}
-.card h2{color:#22c55e;text-align:center;margin-bottom:10px}
-.input{width:100%;padding:12px;border-radius:10px;margin:8px 0;background:#0f172a;color:#fff;border:1px solid #334155}
-.btn{width:100%;padding:13px;border-radius:10px;border:none;font-weight:800;font-size:16px;cursor:pointer;margin-top:10px}
-.btn-green{background:#22c55e;color:#000}
-.btn-blue{background:#3b82f6;color:#fff}
-.acc-box{background:#0f172a;border:2px dashed #22c55e;padding:18px;border-radius:12px;text-align:center;line-height:2}
+body{background:#0a0e1a;color:#fff}
+header{background:#111a30;padding:15px;text-align:center;border-bottom:2px solid #f5c542;position:sticky;top:0;z-index:10}
+header h1{color:#f5c542}
+.top-bar{display:flex;justify-content:space-between;padding:10px 15px;background:#1a233a;font-size:13px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:15px;max-width:700px;margin:auto}
+.game-card{background:#1e2a4a;border:1px solid #2a3655;border-radius:16px;padding:20px 10px;text-align:center;cursor:pointer;transition:.2s}
+.game-card:active{transform:scale(.95)}
+.game-card .icon{font-size:38px}
+.game-card .name{margin-top:8px;font-weight:700;font-size:14px}
+.game-card .play{margin-top:8px;background:#f5c542;color:#000;border:none;padding:6px 18px;border-radius:20px;font-weight:700;font-size:12px}
+.acc-box{max-width:700px;margin:15px auto;background:#111a30;border:2px dashed #f5c542;padding:14px;border-radius:12px;text-align:center}
 </style>
 </head>
 <body>
 <header>
-<h1>SHAMI GAMES</h1>
-<p>ڈیپازٹ اور ودڈرا</p>
+<h1>🎮 SHAMI GAMES HUB</h1>
+<p style="font-size:11px;color:#aaa">8 گیمز ایک جگہ - ڈیمو پوائنٹس سے کھیلیں</p>
 </header>
-<div class="container">
 
-<div class="card">
-<h2>💰 ڈیپازٹ کریں</h2>
+<div class="top-bar">
+<span>💰 پوائنٹس: <b id="pts" style="color:#f5c542">1000</b></span>
+<span>👤 Yasir Naseer</span>
+</div>
+
 <div class="acc-box">
-<b style="color:#22c55e;font-size:20px">Easypaisa Account</b><br>
-نمبر: <b style="font-size:24px">03360063760</b><br>
-نام: <b style="font-size:18px">Yasir Naseer</b><br><br>
-<span style="font-size:13px;color:#94a3b8">اس نمبر پر پیسے بھیج کر نیچے فارم بھریں</span>
-</div>
-<input class="input" id="dep_amount" type="number" placeholder="کتنے پیسے بھیجے؟">
-<input class="input" id="dep_trx" type="text" placeholder="Trx ID لکھیں">
-<input class="input" id="dep_number" type="text" placeholder="جس نمبر سے بھیجے">
-<button class="btn btn-green" onclick="submitDeposit()">ڈیپازٹ جمع کرائیں</button>
-<p id="dep_msg" style="color:#22c55e;text-align:center;margin-top:10px"></p>
+<b>Easypaisa Deposit:</b> <span style="color:#f5c542;font-weight:800">03360063760</span> - Yasir Naseer
+<br><span style="font-size:11px;color:#888">یہ صرف معلومات کے لیے ہے، گیم میں اصلی پیسہ نہیں لگتا</span>
 </div>
 
-<div class="card">
-<h2>💸 ودڈرا کریں</h2>
-<input class="input" id="with_amount" type="number" placeholder="کتنا ودڈرا کرنا ہے؟">
-<input class="input" id="with_account" type="text" placeholder="اپنا Easypaisa نمبر">
-<input class="input" id="with_name" type="text" placeholder="نام">
-<button class="btn btn-blue" onclick="submitWithdraw()">ودڈرا ریکویسٹ</button>
-<p id="with_msg" style="color:#22c55e;text-align:center;margin-top:10px"></p>
+<div class="grid">
+<div class="game-card" onclick="openGame('tiger')"><div class="icon">🐯🐉</div><div class="name">Tiger Dragon</div><button class="play">Play</button></div>
+<div class="game-card" onclick="openGame('crash')"><div class="icon">✈️</div><div class="name">Crash Aviator</div><button class="play">Play</button></div>
+<div class="game-card" onclick="openGame('mines')"><div class="icon">💣</div><div class="name">Mines</div><button class="play">Play</button></div>
+<div class="game-card" onclick="openGame('slot')"><div class="icon">🎰</div><div class="name">Slot Machine</div><button class="play">Play</button></div>
+<div class="game-card" onclick="openGame('dice')"><div class="icon">🎲</div><div class="name">Dice Roll</div><button class="play">Play</button></div>
+<div class="game-card" onclick="openGame('coin')"><div class="icon">🪙</div><div class="name">Coin Flip</div><button class="play">Play</button></div>
+<div class="game-card" onclick="openGame('number')"><div class="icon">🔢</div><div class="name">Number Guess</div><button class="play">Play</button></div>
+<div class="game-card" onclick="openGame('card')"><div class="icon">🃏</div><div class="name">Card Match</div><button class="play">Play</button></div>
 </div>
 
+<div style="max-width:700px;margin:auto;padding:15px">
+<div id="gameArea" style="background:#1a233a;border-radius:16px;padding:20px;display:none;text-align:center;min-height:200px">
+<h2 id="gameTitle" style="color:#f5c542"></h2>
+<div id="gameContent" style="margin-top:15px;font-size:18px"></div>
+<button onclick="closeGame()" style="margin-top:15px;background:#333;color:#fff;border:none;padding:8px 20px;border-radius:20px">واپس جائیں</button>
 </div>
+</div>
+
 <script>
-function submitDeposit(){
- let a=document.getElementById('dep_amount').value;
- let t=document.getElementById('dep_trx').value;
- if(!a||!t){alert('رقم اور Trx ID لکھیں');return;}
- let msg=`*DEPOSIT*%0AAmount:${a}%0ATrx:${t}%0AFrom:${document.getElementById('dep_number').value}%0ATo: 03360063760 Yasir Naseer`;
- window.open(`https://wa.me/923228664858?text=${msg}`,'_blank');
- document.getElementById('dep_msg').innerText="واٹس ایپ پر بھیج دیا گیا";
+let points=1000;
+function openGame(type){
+ document.getElementById('gameArea').style.display='block';
+ window.scrollTo(0, document.getElementById('gameArea').offsetTop);
+ let title=document.getElementById('gameTitle');
+ let content=document.getElementById('gameContent');
+ 
+ if(type==='tiger'){ title.innerText='🐯 Tiger Dragon'; content.innerHTML=`<p>Tiger: <b id="t">?</b> | Dragon: <b id="d">?</b></p><br><button onclick="playTiger()" style="padding:10px 25px;background:#f5c542;border:none;border-radius:10px;font-weight:700">چلائیں</button><p id="tr" style="margin-top:10px;color:#22c55e"></p>`; }
+ if(type==='crash'){ title.innerText='✈️ Crash'; content.innerHTML=`<p>Multiplier: <b id="mult">1.00x</b></p><br><button onclick="playCrash()" style="padding:10px 25px;background:#22c55e;border:none;border-radius:10px;font-weight:700">Start Crash</button><p id="cr" style="margin-top:10px"></p>`; }
+ if(type==='slot'){ title.innerText='🎰 Slot'; content.innerHTML=`<p style="font-size:40px" id="slots">🍒 | 🍋 | 🍒</p><br><button onclick="playSlot()" style="padding:10px 25px;background:#f5c542;border:none;border-radius:10px;font-weight:700">Spin</button><p id="sr"></p>`; }
+ if(type==='dice'){ title.innerText='🎲 Dice'; content.innerHTML=`<p id="diceRes" style="font-size:40px">🎲</p><br><button onclick="playDice()" style="padding:10px 25px;background:#f5c542;border:none;border-radius:10px">Roll</button>`; }
+ if(type==='coin'){ title.innerText='🪙 Coin'; content.innerHTML=`<p id="coinRes" style="font-size:40px">🪙</p><br><button onclick="playCoin()" style="padding:10px 20px;background:#f5c542;border:none;border-radius:10px;margin:5px">Head</button><button onclick="playCoin()" style="padding:10px 20px;background:#3b82f6;color:#fff;border:none;border-radius:10px;margin:5px">Tail</button>`; }
+ if(type==='mines'){ title.innerText='💣 Mines - 5 بکس میں سے بم ڈھونڈیں'; content.innerHTML=`<div id="minesBox"></div>`; makeMines(); }
+ if(type==='number'){ title.innerText='🔢 Number Guess (1-10)'; content.innerHTML=`<input id="numIn" type="number" placeholder="1-10" style="padding:10px;border-radius:8px;width:100px"><br><br><button onclick="playNum()" style="padding:10px 25px;background:#f5c542;border:none;border-radius:10px">Guess</button><p id="nr"></p>`; }
+ if(type==='card'){ title.innerText='🃏 Card Match'; content.innerHTML=`<p id="cardRes">کارڈ پر کلک کریں</p><br><button onclick="playCard()" style="padding:10px 25px;background:#f5c542;border:none;border-radius:10px">Draw Card</button>`; }
 }
-function submitWithdraw(){
- let a=document.getElementById('with_amount').value;
- let ac=document.getElementById('with_account').value;
- if(!a||!ac){alert('تفصیل لکھیں');return;}
- let msg=`*WITHDRAW*%0AAmount:${a}%0AAccount:${ac}%0AName:${document.getElementById('with_name').value}`;
- window.open(`https://wa.me/923228664858?text=${msg}`,'_blank');
- document.getElementById('with_msg').innerText="ریکویسٹ بھیج دی گئی";
-}
+
+function closeGame(){ document.getElementById('gameArea').style.display='none'; }
+
+function playTiger(){ let t=Math.floor(Math.random()*13)+1; let d=Math.floor(Math.random()*13)+1; document.getElementById('t').innerText=t; document.getElementById('d').innerText=d; let r=t>d?'Tiger جیتا':d>t?'Dragon جیتا':'Tie'; document.getElementById('tr').innerText=r; points+=10; document.getElementById('pts').innerText=points; }
+function playCrash(){ let m=(Math.random()*5+1).toFixed(2); document.getElementById('mult').innerText=m+'x'; document.getElementById('cr').innerText=m>2?'جیت گئے!':'کریش ہو گیا'; }
+function playSlot(){ let em=['🍒','🍋','🍊','⭐','💎']; let a=em[Math.floor(Math.random()*5)], b=em[Math.floor(Math.random()*5)], c=em[Math.floor(Math.random()*5)]; document.getElementById('slots').innerText=`${a} | ${b} | ${c}`; document.getElementById('sr').innerText=(a==b&&b==c)?'🎉 جیک پاٹ!':'دوبارہ کوشش کریں'; }
+function playDice(){ let n=Math.floor(Math.random()*6)+1; document.getElementById('diceRes').innerText='🎲 '+n; }
+function playCoin(){ let r=Math.random()>0.5?'Head':'Tail'; document.getElementById('coinRes').innerText=r; }
+function makeMines(){ let h=''; for(let i=0;i<5;i++){ h+=`<button onclick="this.innerText=Math.random()>0.5?'💎':'💣'; this.style.background=Math.random()>0.5?'#22c55e':'#ef4444'" style="width:60px;height:60px;margin:5px;font-size:24px;border:none;border-radius:10px;background:#2a3655">?</button>`; } document.getElementById('minesBox').innerHTML=h; }
+function playNum(){ let g=document.getElementById('numIn').value; let r=Math.floor(Math.random()*10)+1; document.getElementById('nr').innerText=`آپ نے ${g} لکھا، صحیح نمبر ${r} تھا - ${g==r?'جیت گئے!':'ہار گئے'}`; }
+function playCard(){ let c=Math.floor(Math.random()*13)+1; document.getElementById('cardRes').innerText='آپ کا کارڈ: '+c; }
 </script>
 </body>
 </html>
