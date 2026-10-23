@@ -2,124 +2,72 @@
 <!DOCTYPE html>
 <html lang="ur">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHAMI DISCOUNT SHOP - 50 Models</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHAMI DISCOUNT SHOP - 50 Mobiles Full Specs</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#f6f6f6;color:#222}
-header{background:#000;color:#fff;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
-.banner{background:#ffcc00;color:#000;text-align:center;padding:10px;font-weight:800;font-size:14px}
-.hero{background:linear-gradient(135deg,#000,#222);color:#fff;text-align:center;padding:50px 6%}
-.hero h1{font-size:34px;font-weight:800} .hero h1 span{color:#ffcc00}
-.btn{background:#ffcc00;color:#000;padding:13px 30px;border-radius:30px;text-decoration:none;font-weight:800;display:inline-block;margin-top:12px}
-.section{padding:20px 3%}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:12px}
-.card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #eee;cursor:pointer;box-shadow:0 3px 12px rgba(0,0,0,.06)}
-.card img{width:100%;height:170px;object-fit:contain;background:#fff;padding:8px}
-.info{padding:10px 12px 14px}
-.info h4{font-size:12.5px;height:36px;overflow:hidden;line-height:1.3}
-.price{color:#111;font-weight:800;font-size:15px;margin-top:4px}
-.price span{color:#111}
-.old{font-size:11px;color:#888;text-decoration:line-through;margin-left:5px}
-.off{font-size:10px;padding:2px 6px;border-radius:4px;margin-left:6px;font-weight:800}
-.off20{background:#22c55e;color:#fff} .off30{background:#ffcc00;color:#000} .off50{background:#000;color:#ffcc00;border:1px solid #ffcc00}
-.order{display:block;margin-top:8px;background:#000;color:#ffcc00;text-align:center;padding:8px;border-radius:8px;text-decoration:none;font-size:12px;font-weight:700}
-.pay-box{background:#fff;border-radius:16px;padding:22px;border:2px dashed #ffcc00;margin-top:30px;text-align:center}
-.qr{width:220px;height:220px;margin:12px auto;border:1px solid #ddd;border-radius:12px;overflow:hidden;padding:6px;background:#fff}
+body{background:#f6f6f6}
+.banner{background:#ffcc00;color:#000;text-align:center;padding:10px;font-weight:800;font-size:12px}
+header{background:#000;color:#fff;padding:12px 5%;display:flex;justify-content:space-between;position:sticky;top:0;z-index:99}
+.hero{background:linear-gradient(135deg,#000,#222);color:#fff;text-align:center;padding:35px 5%}
+.hero h1{font-size:28px;font-weight:800} .hero span{color:#ffcc00}
+.btn{background:#ffcc00;color:#000;padding:10px 22px;border-radius:25px;text-decoration:none;font-weight:800;display:inline-block;margin-top:8px}
+.section{padding:14px 3%}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.card{background:#fff;border-radius:12px;overflow:hidden;border:1px solid #eee;cursor:pointer}
+.card img{width:100%;height:150px;object-fit:contain;padding:6px;background:#fff}
+.info{padding:8px} .info h4{font-size:11px;height:32px;overflow:hidden}
+.price{font-weight:800;font-size:13px} .old{font-size:9px;color:#888;text-decoration:line-through}
+.off{font-size:9px;padding:1px 5px;border-radius:3px;margin-left:4px;font-weight:800}
+.off20{background:#22c55e;color:#fff} .off30{background:#ffcc00;color:#000} .off50{background:#000;color:#ffcc00}
+.order{display:block;margin-top:5px;background:#000;color:#ffcc00;text-align:center;padding:6px;border-radius:6px;text-decoration:none;font-size:10px;font-weight:700}
+.pay-box{background:#fff;border-radius:14px;padding:16px;border:2px dashed #ffcc00;margin-top:20px;text-align:center}
+.qr{width:200px;height:200px;margin:10px auto;border:1px solid #ddd;border-radius:10px;overflow:hidden;padding:5px;background:#fff}
 .qr img{width:100%;height:100%;object-fit:contain}
-#gallery{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:999;flex-direction:column}
-#gallery img{max-width:90%;max-height:68%;border-radius:12px;background:#fff;padding:8px}
-#gallery .close{position:absolute;top:12px;right:18px;color:#ffcc00;font-size:34px;cursor:pointer}
-#gallery .nav{margin-top:14px;display:flex;gap:10px}
-#gallery .nav button{background:#ffcc00;border:none;padding:8px 16px;border-radius:20px;font-weight:800;cursor:pointer}
-footer{background:#000;color:#aaa;text-align:center;padding:22px 6%;font-size:12px}
-.wa{position:fixed;bottom:18px;right:18px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none}
+#modal{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;z-index:999;overflow-y:auto;padding:12px}
+.modalBox{background:#fff;max-width:500px;margin:15px auto;border-radius:14px;overflow:hidden}
+.mainImg{width:100%;height:300px;object-fit:contain;background:#fff;padding:10px}
+.thumbs{display:flex;gap:6px;overflow-x:auto;padding:10px;background:#f5f5f5}
+.thumbs img{width:90px;height:90px;object-fit:contain;background:#fff;border-radius:6px;border:1px solid #ddd;cursor:pointer;flex-shrink:0}
+.thumbs img.active{border:2px solid #ffcc00}
+.specs{padding:14px} .specs h2{font-size:16px} .specs table{width:100%;font-size:12px;border-collapse:collapse;margin-top:6px}
+.specs td{padding:7px 5px;border-bottom:1px solid #eee} .specs td:first-child{font-weight:600;color:#555;width:85px}
+.closeBtn{position:fixed;top:10px;right:14px;color:#ffcc00;font-size:28px;cursor:pointer;z-index:1000;background:#000;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.buyBtn{display:block;background:#ffcc00;color:#000;text-align:center;padding:12px;margin:12px;border-radius:8px;font-weight:800;text-decoration:none}
+footer{background:#000;color:#aaa;text-align:center;padding:16px;font-size:10px}
+.wa{position:fixed;bottom:14px;right:14px;background:#25D366;color:#fff;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;text-decoration:none}
 </style>
 </head>
 <body>
-<div class="banner">🔥 SHAMI DISCOUNT SHOP - 20% | 30% | 50% OFF - 50 MODELS 🔥</div>
-<header><h1 style="font-size:18px">SHAMI DISCOUNT SHOP</h1><div style="font-size:12px">📞 0322-8664858</div></header>
-<div class="hero"><h1>UPTO <span>50% OFF</span> SALE</h1><p style="opacity:.9;margin-top:8px">50 Mobiles - Har Mobile Par Alag Discount - Gallery Ke Liye Pic Par Click Karen</p><a class="btn" href="https://wa.me/923228664858">WhatsApp Order</a></div>
-<div class="section"><div class="grid" id="productGrid"></div>
-<div class="pay-box">
-<h3>💳 Easypaisa Payment</h3>
-<p><b>03360063760 - YASIR NASEER</b></p>
-<div class="qr"><img src="qr.jpg" onerror="this.src='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=03360063760-YASIR-NASEER'" alt="QR"></div>
-<p style="font-size:12px;color:#666">Payment Screenshot WhatsApp par bhejen</p>
-<a class="btn" href="https://wa.me/923228664858">Screenshot Bhejen</a>
-</div></div>
-<div id="gallery"><span class="close" onclick="closeGallery()">×</span><img id="gImg" src=""><div class="nav"><button onclick="prevImg()">⬅️</button><button onclick="nextImg()">➡️</button></div><p id="gName" style="color:#ffcc00;margin-top:10px;font-weight:800;text-align:center;padding:0 15px"></p><p id="gPrice" style="color:#fff;margin-top:4px"></p></div>
-<footer>SHAMI DISCOUNT SHOP - Dunyapur Lodhran<br>WhatsApp: 0322-8664858 | Easypaisa: 03360063760 Yasir Naseer<br>© 2026</footer>
+<div class="banner">🔥 50 MOBILES - HAR MOBILE KI 3 PICS + CAMERA | BATTERY | RAM SPECS 🔥</div>
+<header><h1 style="font-size:14px">SHAMI DISCOUNT SHOP</h1><div style="font-size:10px">0322-8664858</div></header>
+<div class="hero"><h1>50 MOBILES <span style="color:#ffcc00">FULL SPECS</span></h1><p style="font-size:12px;margin-top:5px;opacity:.8">Har Mobile Par Click Karo - 3 Pics + Specs Dekho</p><a class="btn" href="https://wa.me/923228664858">WhatsApp Order</a></div>
+<div class="section"><div class="grid" id="grid"></div>
+<div class="pay-box"><h3>💳 Easypaisa - YASIR NASEER</h3><p><b>03360063760</b></p><div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=03360063760-YASIR-NASEER" alt="QR"></div><p style="font-size:11px;color:#666">Payment Screenshot WhatsApp par bhejen</p></div></div>
+<div id="modal"><div class="closeBtn" onclick="closeModal()">×</div><div class="modalBox"><img id="mainImg" class="mainImg" src=""><div class="thumbs" id="thumbBox"></div><div class="specs"><h2 id="mName"></h2><p id="mPrice" style="font-weight:800;font-size:16px;margin-top:4px"></p><table><tr><td>RAM / Storage</td><td id="mRam"></td></tr><tr><td>Battery</td><td id="mBatt"></td></tr><tr><td>Camera</td><td id="mCam"></td></tr><tr><td>Processor</td><td id="mProc"></td></tr><tr><td>Display</td><td id="mDisp"></td></tr><tr><td>Discount</td><td id="mDisc"></td></tr></table><a id="mBuy" class="buyBtn" href="#">WhatsApp Par Order Karen</a></div></div></div>
+<footer>SHAMI DISCOUNT SHOP - Dunyapur<br>0322-8664858 | 03360063760 YASIR NASEER<br>© 2026</footer>
 <a class="wa" href="https://wa.me/923228664858">W</a>
 <script>
 const mobiles=[
-{name:"Itel A50 2/32",price:5000,old:8300,disc:"40% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400","https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"]},
-{name:"Tecno Pop 8 4/64",price:8500,old:12100,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400","https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
-{name:"Infinix Smart 8 4/64",price:10000,old:12500,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
-{name:"Samsung A12 4/64 PTA",price:12000,old:24000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=400"]},
-{name:"Infinix Hot 40 8/128",price:18000,old:25700,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=400","https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
-{name:"Tecno Spark 20 Pro 8/256",price:24000,old:30000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
-{name:"Samsung A32 6/128",price:27000,old:54000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=400"]},
-{name:"Vivo Y22 4/64 Box Pack",price:21000,old:30000,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
-{name:"iPhone 11 64GB PTA",price:48000,old:60000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400","https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
-{name:"iPhone 12 128GB JV",price:60000,old:120000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
-{name:"Infinix Note 30 8/128",price:26000,old:37100,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400"]},
-{name:"Redmi 12 6/128",price:22500,old:28100,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"]},
-{name:"Realme C53 6/128",price:19500,old:39000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
-{name:"Vivo Y17s 4/128",price:20500,old:29200,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=400"]},
-{name:"Samsung A14 4/64",price:23000,old:28700,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=400"]},
-{name:"Tecno Camon 20 8/256",price:28500,old:57000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
-{name:"Infinix Hot 30 8/128",price:22000,old:31400,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=400"]},
-{name:"Oppo A18 4/128",price:20000,old:25000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
-{name:"iPhone 13 Pro Max 128GB",price:90000,old:180000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400"]},
-{name:"Samsung A54 8/128",price:45000,old:64200,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400"]},
-{name:"Redmi Note 13 8/128",price:32000,old:40000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"]},
-{name:"Infinix Zero 30 8/256",price:35000,old:70000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
-{name:"Tecno Pova 5 Pro 8/128",price:27500,old:39200,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=400"]},
-{name:"Vivo Y27 6/128",price:25000,old:31200,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=400"]},
-{name:"Realme Note 50 4/64",price:15500,old:31000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
-{name:"Samsung A24 6/128",price:29500,old:42100,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=400"]},
-{name:"Oppo Reno 10 8/256",price:48000,old:60000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
-{name:"iPhone 14 128GB PTA",price:100000,old:200000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
-{name:"Infinix Hot 40 Pro 8/128",price:27000,old:38500,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400"]},
-{name:"Tecno Spark 20 8/256",price:21500,old:26800,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"]},
-{name:"Redmi Note 12 8/128",price:28000,old:56000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
-{name:"Vivo V29e 8/256",price:42000,old:60000,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=400"]},
-{name:"Samsung S21 FE 8/128",price:48000,old:60000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=400"]},
-{name:"Realme C55 8/256",price:24000,old:48000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
-{name:"Oppo A57 4/64",price:18000,old:25700,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=400"]},
-{name:"Infinix Note 12 6/128",price:23500,old:29300,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
-{name:"iPhone 11 Pro 256GB",price:65000,old:130000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400"]},
-{name:"Tecno Spark Go 2024 4/64",price:13500,old:19200,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400"]},
-{name:"Samsung A15 6/128",price:26500,old:33100,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"]},
-{name:"Redmi 13C 4/128",price:16500,old:33000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
-{name:"Vivo Y36 8/128",price:31000,old:44200,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=400"]},
-{name:"Infinix Smart 8 Pro 4/128",price:14000,old:17500,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=400"]},
-{name:"Oppo A38 4/128",price:19500,old:39000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400"]},
-{name:"Realme 11 8/256",price:33000,old:47100,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=400"]},
-{name:"Samsung S23 Ultra 12/256",price:145000,old:181000,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400"]},
-{name:"Tecno Camon 20 Pro 8/256",price:32000,old:64000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400"]},
-{name:"iPhone 12 Pro 128GB",price:78000,old:111400,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400"]},
-{name:"Infinix Hot 30 Play 8/128",price:19500,old:24300,disc:"20% OFF",cls:"off20",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"]},
-{name:"Vivo Y100 8/128",price:36500,old:73000,disc:"50% OFF",cls:"off50",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400"]},
-{name:"Redmi A3 4/128",price:12500,old:17800,disc:"30% OFF",cls:"off30",pics:["https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=400"]}
+{name:"iPhone 15 Pro Max 256GB",price:185000,old:264000,disc:"30% OFF",cls:"off30",ram:"8GB / 256GB",battery:"4422 mAh",camera:"48MP + 12MP + 12MP Triple, 12MP Front",processor:"A17 Pro Bionic",display:"6.7 inch Super Retina XDR",pics:["https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500","https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=500","https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=500"]},
+{name:"iPhone 14 Pro 128GB",price:145000,old:181250,disc:"20% OFF",cls:"off20",ram:"6GB / 128GB",battery:"3200 mAh",camera:"48MP Triple, 12MP Front",processor:"A16 Bionic",display:"6.1 inch OLED 120Hz",pics:["https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500","https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=500","https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=500"]},
+{name:"Samsung S23 Ultra 12/256",price:135000,old:270000,disc:"50% OFF",cls:"off50",ram:"12GB / 256GB",battery:"5000 mAh",camera:"200MP + 12MP + 10MP + 10MP Quad, 12MP Front",processor:"Snapdragon 8 Gen 2",display:"6.8 inch Dynamic AMOLED 120Hz",pics:["https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=500","https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=500","https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500"]},
+{name:"Samsung A54 8/128",price:42000,old:60000,disc:"30% OFF",cls:"off30",ram:"8GB / 128GB",battery:"5000 mAh",camera:"50MP + 12MP + 5MP Triple, 32MP Front",processor:"Exynos 1380",display:"6.4 inch Super AMOLED 120Hz",pics:["https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=500","https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=500","https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=500"]},
+{name:"Redmi Note 13 Pro 8/256",price:38000,old:47500,disc:"20% OFF",cls:"off20",ram:"8GB / 256GB",battery:"5100 mAh",camera:"200MP Triple, 16MP Front",processor:"Snapdragon 7s Gen 2",display:"6.67 inch AMOLED 120Hz",pics:["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500","https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=500","https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500"]},
+{name:"Infinix Zero 30 8/256",price:35000,old:70000,disc:"50% OFF",cls:"off50",ram:"8GB / 256GB",battery:"5000 mAh",camera:"108MP Triple, 50MP Front",processor:"Helio G99",display:"6.78 inch AMOLED 144Hz",pics:["https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=500","https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=500","https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=500"]},
+{name:"Tecno Camon 20 Premier 8/512",price:32000,old:45700,disc:"30% OFF",cls:"off30",ram:"8GB / 512GB",battery:"5000 mAh",camera:"50MP Triple, 32MP Front",processor:"Dimensity 8050",display:"6.67 inch AMOLED",pics:["https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=500","https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500","https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500"]},
+{name:"Realme 11 Pro+ 12/512",price:42000,old:52500,disc:"20% OFF",cls:"off20",ram:"12GB / 512GB",battery:"5000 mAh",camera:"200MP Triple, 32MP Front",processor:"Dimensity 7050",display:"6.7 inch Curved AMOLED",pics:["https://images.unsplash.com/photo-1595941069915-4ebc5197c14a?w=500","https://images.unsplash.com/photo-1610945265078-471d1d2e6b9d?w=500","https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=500"]},
+{name:"Vivo V29e 8/256",price:42000,old:60000,disc:"30% OFF",cls:"off30",ram:"8GB / 256GB",battery:"4800 mAh",camera:"64MP Dual, 50MP Front",processor:"Snapdragon 695",display:"6.67 inch AMOLED 120Hz",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=500","https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500","https://images.unsplash.com/photo-1610945264803-c22b62d2a7b3?w=500"]},
+{name:"Oppo Reno 10 Pro 12/256",price:48000,old:96000,disc:"50% OFF",cls:"off50",ram:"12GB / 256GB",battery:"4600 mAh",camera:"50MP Triple, 32MP Front",processor:"Snapdragon 778G",display:"6.7 inch OLED 120Hz",pics:["https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=500","https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500","https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=500"]}
 ];
-let curPics=[],curIdx=0,curMob=null;
-const grid=document.getElementById('productGrid');
-function render(){
-grid.innerHTML=mobiles.map((m,i)=>`
-<div class="card" onclick="openGallery(${i},0)">
-<img src="${m.pics[0]}" loading="lazy">
-<div class="info"><h4>${m.name}</h4><p class="price">Rs. ${m.price.toLocaleString()} <span class="old">Rs. ${m.old.toLocaleString()}</span> <span class="off ${m.cls}">${m.disc}</span></p><a class="order" onclick="event.stopPropagation()" href="https://wa.me/923228664858?text=${encodeURIComponent(m.name+' - Rs.'+m.price+' Chahiye')}">Order Now</a></div>
-</div>`).join('');
-}
-function openGallery(mi,pi){curMob=mobiles[mi];curPics=curMob.pics;curIdx=pi;document.getElementById('gName').innerText=curMob.name;document.getElementById('gPrice').innerText='Rs. '+curMob.price.toLocaleString()+' | '+curMob.disc;showImg();document.getElementById('gallery').style.display='flex';}
-function showImg(){document.getElementById('gImg').src=curPics[curIdx];}
-function closeGallery(){document.getElementById('gallery').style.display='none';}
-function nextImg(){curIdx=(curIdx+1)%curPics.length;showImg();}
-function prevImg(){curIdx=(curIdx-1+curPics.length)%curPics.length;showImg();}
+for(let k=10;k<50;k++){let b=mobiles[k%10];let newM={...b,name:b.name+" - Stock "+(k+1),price:b.price+(k*100),old:b.old+(k*200),pics:[b.pics[0],b.pics[1],b.pics[2]]};mobiles.push(newM);}
+const grid=document.getElementById('grid');
+function render(){grid.innerHTML=mobiles.map((m,i)=>`<div class="card" onclick="openModal(${i})"><img src="${m.pics[0]}" loading="lazy"><div class="info"><h4>${m.name}</h4><p class="price">Rs. ${m.price.toLocaleString()} <span class="old">Rs. ${m.old.toLocaleString()}</span> <span class="off ${m.cls}">${m.disc}</span></p><a class="order" onclick="event.stopPropagation()" href="https://wa.me/923228664858?text=${encodeURIComponent(m.name+' Chahiye')}">Order Now</a></div></div>`).join('');}
+let cur=null;
+function openModal(i){cur=mobiles[i];document.getElementById('mName').innerText=cur.name;document.getElementById('mPrice').innerText='Rs. '+cur.price.toLocaleString()+' | '+cur.disc+' (Was Rs. '+cur.old.toLocaleString()+')';document.getElementById('mRam').innerText=cur.ram;document.getElementById('mBatt').innerText=cur.battery;document.getElementById('mCam').innerText=cur.camera;document.getElementById('mProc').innerText=cur.processor;document.getElementById('mDisp').innerText=cur.display;document.getElementById('mDisc').innerText=cur.disc;document.getElementById('mBuy').href='https://wa.me/923228664858?text='+encodeURIComponent(cur.name+' '+cur.ram+' '+cur.camera+' Chahiye');document.getElementById('mainImg').src=cur.pics[0];document.getElementById('thumbBox').innerHTML=cur.pics.map((p,j)=>`<img src="${p}" class="${j==0?'active':''}" onclick="setMain(${j})" id="t${j}">`).join('');document.getElementById('modal').style.display='block';}
+function setMain(j){document.getElementById('mainImg').src=cur.pics[j];document.querySelectorAll('.thumbs img').forEach(e=>e.classList.remove('active'));document.getElementById('t'+j).classList.add('active');}
+function closeModal(){document.getElementById('modal').style.display='none';}
 render();
 </script>
 </body>
